@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple Watch Zone 2 heart rate vs "220 − age": why they differ | Zone 2 Training Coach</title>
+<meta name="description" content="Your Apple Watch Zone 2 is often 20+ bpm higher than the classic 60–70% of (220 − age) formula. Here's how each is calculated, worked examples, and which to use.">
+<meta name="apple-itunes-app" content="app-id=6762536918">
+<link rel="canonical" href="https://jaronapp.github.io/zone2coach/guides/apple-watch-zone-2-heart-rate.html">
+<link rel="icon" href="../icon.jpg">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <img src="../icon.jpg" alt=""><a class="brand" href="../">Zone 2 Training Coach</a>
+  <nav><a href="../#guides">Guides</a></nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>Why your Apple Watch Zone 2 is higher than "220 − age"</h1>
+<p class="byline">By Jaron, developer of Zone 2 Training Coach · Updated September 2026</p>
+
+<p class="lead">If you've worked out your Zone 2 with the classic formula and then looked at your Apple Watch, the numbers probably didn't match. Often they're 20 or more beats per minute apart. Both are "Zone 2", but they're calculated differently.</p>
+
+<div class="zonebar"><span></span><span></span><span></span><span></span><span></span></div>
+
+<h2>The classic formula: percent of max heart rate</h2>
+<p>The most common method estimates your maximum heart rate as <strong>220 − age</strong>, then takes <strong>60–70%</strong> of it as Zone 2. It's simple and needs nothing but your age.</p>
+
+<h2>Apple Watch: heart rate reserve</h2>
+<p>Apple calculates your zones from your <strong>age and resting heart rate</strong> (<a href="https://support.apple.com/guide/watch/view-heart-rate-zones-apd897dccddf/watchos">Apple Support</a>). That's the <em>heart rate reserve</em> (Karvonen) method: take the range between your resting and maximum heart rate, and add a percentage of it to your resting rate.</p>
+<p>Apple doesn't publish its exact numbers. But in my testing, <strong>60–70% of heart rate reserve</strong>, with max heart rate estimated as <strong>208 − 0.7 × age</strong> (the <a href="https://pubmed.ncbi.nlm.nih.gov/11153730/">Tanaka formula</a>, which is generally more accurate than 220 − age), reproduced an Apple Watch's Zone 2 to within about 1 bpm.</p>
+
+<h2>Worked examples</h2>
+<table>
+  <tr><th>Person</th><th>Classic (60–70% of 220 − age)</th><th>Heart rate reserve (Apple-style)</th></tr>
+  <tr><td>Age 26, resting HR 66</td><td>116–136 bpm</td><td>140–153 bpm</td></tr>
+  <tr><td>Age 45, resting HR 60</td><td>105–123 bpm</td><td>130–142 bpm</td></tr>
+</table>
+<p>The gap comes from two things. Heart rate reserve starts from your resting heart rate, not from zero, and it uses a different estimate of max heart rate.</p>
+
+<h2>Which one should you use?</h2>
+<p>Heart rate reserve tracks how hard you're actually working better than a plain percentage of max, because it accounts for your fitness through your resting heart rate. For many people, the classic 60–70%-of-max range sits closer to an easy stroll (Zone 1) than true Zone 2.</p>
+<ul>
+  <li><strong>If you wear an Apple Watch:</strong> use its zones. Check them in the Watch app → Workout → Heart Rate Zones. You can also set them manually there.</li>
+  <li><strong>If you've had a lab test</strong> (lactate or VO2 max): your tested numbers beat any formula.</li>
+  <li><strong>The talk test:</strong> in Zone 2 you can still speak in full sentences, but you'd rather not sing.</li>
+</ul>
+<p class="note">Beta blockers and some other medications change your heart rate response, so every formula is off. Ask your doctor which range to use. This article is general fitness information, not medical advice.</p>
+
+<div class="cta">
+  <img class="icon" src="../icon.jpg" alt="">
+  <div><strong>Zone 2 Training Coach</strong><p>Counts your weekly Zone 2 minutes with the same zones as your Apple Watch, read directly on iOS 27.</p></div>
+  <a class="badge" href="https://apps.apple.com/app/id6762536918"><img src="../app-store-badge.svg" alt="Download on the App Store"></a>
+</div>
+</article>
+</main>
+<footer><div class="wrap">© 2026 Jaron · <a href="../">Zone 2 Training Coach</a> · General fitness information, not medical advice.</div></footer>
+</body>
+</html>

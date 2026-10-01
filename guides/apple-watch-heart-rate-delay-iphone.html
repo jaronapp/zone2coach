@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why your iPhone heart rate lags your Apple Watch (and how to see it live) | Zone 2 Training Coach</title>
+<meta name="description" content="Your watch face shows heart rate every few seconds, but iPhone apps show a number minutes old. What the Apple Watch actually saves, when it syncs, and how to get live heart rate on your iPhone.">
+<meta name="apple-itunes-app" content="app-id=6762536918">
+<link rel="canonical" href="https://jaronapp.github.io/zone2coach/guides/apple-watch-heart-rate-delay-iphone.html">
+<link rel="icon" href="../icon.jpg">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <img src="../icon.jpg" alt=""><a class="brand" href="../">Zone 2 Training Coach</a>
+  <nav><a href="../#guides">Guides</a></nav>
+</div></header>
+<main class="wrap">
+<article>
+<h1>Why your iPhone heart rate lags your Apple Watch</h1>
+<p class="byline">By Jaron, developer of Zone 2 Training Coach · Updated September 2026</p>
+
+<p class="lead">Your watch face updates your heart rate constantly. Open almost any iPhone app, even Apple's Health app, and the number is often a few minutes old. I measured why while building a heart rate app on an Apple Watch Ultra 4.</p>
+
+<h2>What I found</h2>
+<ol>
+  <li><strong>At rest, the Watch <em>shows</em> heart rate constantly but <em>saves</em> it only every few minutes.</strong> In my logs, saved readings were about 5 minutes apart (for example 19:56, then 20:01). Apps can only read saved readings.</li>
+  <li><strong>The iPhone only gets those readings when the Watch syncs.</strong> Opening or switching back to an app on the iPhone often brings in a new batch, which is why closing and reopening an app sometimes "catches up". Pull-to-refresh inside an app usually doesn't trigger a sync.</li>
+  <li><strong>Opening the Heart Rate app on the Watch</strong> takes a fresh reading and syncs it right away.</li>
+  <li><strong>During a workout, everything changes:</strong> readings come every few seconds.</li>
+</ol>
+
+<h2>How to see live heart rate on your iPhone</h2>
+<ul>
+  <li><strong>Start a workout.</strong> Workout apps that mirror to the iPhone show your heart rate every few seconds.</li>
+  <li><strong>Keep an app open on the Watch.</strong> A Watch app that's on screen can send readings straight to its iPhone app.</li>
+  <li><strong>Keep that app on screen longer:</strong> Watch app → General → Return to Clock → choose the app → Custom → After 1 hour. Otherwise the Watch goes back to the watch face after 2 minutes.</li>
+</ul>
+
+<p class="note">These observations come from my own testing on one Apple Watch Ultra 4 with watchOS 27. Apple controls how often the Watch saves and syncs, and it can differ between models and software versions.</p>
+
+<div class="cta">
+  <img class="icon" src="../icon.jpg" alt="">
+  <div><strong>Zone 2 Training Coach</strong><p>Open it on your Watch and your iPhone shows live heart rate and your current zone, or start a live Zone 2 workout that taps your wrist when you drift out of zone.</p></div>
+  <a class="badge" href="https://apps.apple.com/app/id6762536918"><img src="../app-store-badge.svg" alt="Download on the App Store"></a>
+</div>
+</article>
+</main>
+<footer><div class="wrap">© 2026 Jaron · <a href="../">Zone 2 Training Coach</a> · General fitness information, not medical advice.</div></footer>
+</body>
+</html>
