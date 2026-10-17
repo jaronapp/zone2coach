@@ -1,0 +1,2617 @@
+{
+  "schemaVersion": 1,
+  "plans": [
+    {
+      "id": "3-day-gym-fat-loss",
+      "version": 1,
+      "name": "3 Day Gym Plan for Fat Loss",
+      "subtitle": "3 full-body lifts + Zone 2 walks on your off days",
+      "forWho": "You can get to the gym 3 days a week and want to lose fat and keep muscle.",
+      "level": "beginner",
+      "promise": "Lift 3 days, walk in Zone 2 on the others: build to 150 Zone 2 minutes a week in 6 weeks.",
+      "whyItWorks": "Lifting keeps or builds muscle. Zone 2 burns more fat for fuel than hard cardio, and it's easy to recover from, so the minutes add up week after week. Easy cardio doesn't blunt your lifting gains, and keeping Zone 2 on its own days keeps lift days short. Three full-body days work each muscle about three times a week.",
+      "cautions": [
+        "Learn each lift with light weights first, and stop any lift that causes sharp pain.",
+        "Romanian deadlifts and walking lunges make legs sore in week 1. The Tuesday walk can be slower.",
+        "The Sunday walk is optional, not a catch-up for missed days."
+      ],
+      "isFree": false,
+      "weeklyZone2Minutes": [
+        105,
+        120,
+        130,
+        105,
+        140,
+        150
+      ],
+      "templates": {
+        "liftA": {
+          "kind": "lift",
+          "title": "Full body A",
+          "instruction": "Full body A. Leave 1-2 reps in the tank.",
+          "exercises": [
+            "Leg press 3×10",
+            "Bench press 3×8",
+            "Cable row 3×10",
+            "Plank 3×40 s"
+          ]
+        },
+        "liftB": {
+          "kind": "lift",
+          "title": "Full body B",
+          "instruction": "Full body B. Smooth reps, full range.",
+          "exercises": [
+            "Romanian deadlift 3×8",
+            "Lat pulldown 3×10",
+            "Overhead press 3×8",
+            "Walking lunges 3×10 each leg"
+          ]
+        },
+        "liftC": {
+          "kind": "lift",
+          "title": "Full body C",
+          "instruction": "Full body C. Add weight if last week felt easy.",
+          "exercises": [
+            "Incline DB press 3×10",
+            "Goblet squat 3×10",
+            "One-arm DB row 3×10 each",
+            "Curls + triceps 2×12"
+          ]
+        },
+        "walk": {
+          "kind": "zone2",
+          "title": "Zone 2 walk",
+          "activity": "walk",
+          "instruction": "Brisk Zone 2 walk. Outside or incline treadmill.",
+          "options": [
+            "inclineWalk"
+          ],
+          "machineSettings": [
+            {
+              "label": "Treadmill",
+              "value": "3.0 mph, incline to stay in Zone 2"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Brisk Zone 2: you can talk, but you couldn't sing"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ],
+          "inclineSuggestion": true
+        },
+        "long": {
+          "kind": "zone2",
+          "title": "Long Zone 2 walk",
+          "activity": "walk",
+          "instruction": "Long Zone 2 walk. Grab a friend or a podcast.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Steady Zone 2. Ease off if your heart rate drifts up"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest. Optional 30 min easy walk."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "liftA"
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "liftB"
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "liftC"
+            },
+            {
+              "template": "long",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "liftA"
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "liftB"
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "liftC"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "liftA"
+            },
+            {
+              "template": "walk",
+              "minutes": 35
+            },
+            {
+              "template": "liftB"
+            },
+            {
+              "template": "walk",
+              "minutes": 35
+            },
+            {
+              "template": "liftC"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week: 2 sets of each exercise and shorter walks. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "liftA",
+              "exercises": [
+                "Leg press 2×10",
+                "Bench press 2×8",
+                "Cable row 2×10",
+                "Plank 2×40 s"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "liftB",
+              "exercises": [
+                "Romanian deadlift 2×8",
+                "Lat pulldown 2×10",
+                "Overhead press 2×8",
+                "Walking lunges 2×10 each leg"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "liftC",
+              "exercises": [
+                "Incline DB press 2×10",
+                "Goblet squat 2×10",
+                "One-arm DB row 2×10 each",
+                "Curls + triceps 2×12"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "long",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "liftA"
+            },
+            {
+              "template": "walk",
+              "minutes": 40
+            },
+            {
+              "template": "liftB"
+            },
+            {
+              "template": "walk",
+              "minutes": 40
+            },
+            {
+              "template": "liftC"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "liftA"
+            },
+            {
+              "template": "walk",
+              "minutes": 45
+            },
+            {
+              "template": "liftB"
+            },
+            {
+              "template": "walk",
+              "minutes": 45
+            },
+            {
+              "template": "liftC"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5-day-split-zone2",
+      "version": 1,
+      "name": "5 Day Split + Zone 2",
+      "subtitle": "“I want to work out 5 days a week and burn fat”: here's the week",
+      "forWho": "You want to train 5 days a week: 3 lifts (glute focus), 2 Zone 2 days and a long weekend walk.",
+      "level": "intermediate",
+      "promise": "Train 5 days, burn more fat for fuel with real Zone 2 cardio, and close 150 Zone 2 minutes a week.",
+      "whyItWorks": "Lifting keeps or builds muscle, and easy cardio doesn't blunt those gains. Two dedicated Zone 2 days plus one long walk build steady minutes that are easy to recover from. Week 3 reaches 150 Zone 2 minutes, the amount health guidelines recommend, and week 4 is lighter on purpose so you come back fresh.",
+      "cautions": [
+        "Thrusters and kettlebell swings are technical: learn them with light weights.",
+        "Hip thrusts and split squats can bother knees or hips. Swap in glute bridges or step-ups if they do.",
+        "The stair climber pushes most people out of Zone 2 fast, so use the slowest level only.",
+        "The bonus cardio after a lift is optional and never counted in the plan's minutes."
+      ],
+      "isFree": false,
+      "weeklyZone2Minutes": [
+        115,
+        130,
+        150,
+        115,
+        150,
+        160
+      ],
+      "templates": {
+        "lower": {
+          "kind": "lift",
+          "title": "Lower body + glutes",
+          "instruction": "Lower + glutes. Warm up 5 min first.",
+          "exercises": [
+            "Goblet squat 3×10",
+            "Romanian deadlift 3×10",
+            "Hip thrust 3×12",
+            "Reverse lunge 3×10 each leg",
+            "Sumo squat 2×12"
+          ],
+          "bonusZone2": {
+            "activity": "inclineWalk",
+            "minutes": 20,
+            "instruction": "Optional incline walk after your lift. Not counted."
+          }
+        },
+        "upper": {
+          "kind": "lift",
+          "title": "Upper body + core",
+          "instruction": "Upper + core. Controlled reps, 60-90 s rest.",
+          "exercises": [
+            "DB shoulder press 3×10",
+            "One-arm row 3×10 each",
+            "Lat pulldown 3×10",
+            "Incline push-up 3×10",
+            "Plank shoulder taps 3×20"
+          ],
+          "bonusZone2": {
+            "activity": "cycle",
+            "minutes": 20,
+            "instruction": "Optional easy bike after your lift. Not counted."
+          }
+        },
+        "full": {
+          "kind": "lift",
+          "title": "Full body + glutes",
+          "instruction": "Full body + glutes. Move well, then add weight.",
+          "exercises": [
+            "DB thruster 3×10",
+            "Bulgarian split squat 3×8 each leg",
+            "Kettlebell swing 3×15",
+            "Step-up 3×10 each leg",
+            "Farmer's carry 3×40 m"
+          ],
+          "bonusZone2": {
+            "activity": "walk",
+            "minutes": 20,
+            "instruction": "Optional walk after your lift. Not counted."
+          }
+        },
+        "cardio1": {
+          "kind": "zone2",
+          "title": "Zone 2 cardio, your pick",
+          "activity": "inclineWalk",
+          "instruction": "Zone 2, your pick: incline walk, bike or elliptical.",
+          "options": [
+            "bike",
+            "elliptical",
+            "walk"
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Zone 2 on the machine you picked: talk, but don't sing"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ],
+          "inclineSuggestion": true
+        },
+        "cardio2": {
+          "kind": "zone2",
+          "title": "Zone 2 cardio + stretch",
+          "activity": "rower",
+          "instruction": "Zone 2: rower, hill walk or elliptical. Then stretch.",
+          "options": [
+            "inclineWalk",
+            "elliptical",
+            "stair"
+          ],
+          "machineSettings": [
+            {
+              "label": "Rower",
+              "value": "slow strokes"
+            },
+            {
+              "label": "Stair climber",
+              "value": "slowest level only"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Zone 2: slow, long strokes on the rower, or your pick"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            },
+            {
+              "minutes": 10,
+              "text": "Mobility and stretching"
+            }
+          ],
+          "inclineSuggestion": true
+        },
+        "long": {
+          "kind": "zone2",
+          "title": "Long brisk walk",
+          "activity": "walk",
+          "instruction": "Long brisk walk. Talk the whole way. Then stretch.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Long brisk walk: talk the whole way"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Full rest. Sleep, eat well, recharge."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "cardio1",
+              "minutes": 35
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "cardio2",
+              "minutes": 35
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "cardio1",
+              "minutes": 40
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "cardio2",
+              "minutes": 40
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 50
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "cardio1",
+              "minutes": 45
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "cardio2",
+              "minutes": 45
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week: 2 sets of each exercise and shorter cardio. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "lower",
+              "exercises": [
+                "Goblet squat 2×10",
+                "Romanian deadlift 2×10",
+                "Hip thrust 2×12",
+                "Reverse lunge 2×10 each leg",
+                "Sumo squat 2×12"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "cardio1",
+              "minutes": 35
+            },
+            {
+              "template": "upper",
+              "exercises": [
+                "DB shoulder press 2×10",
+                "One-arm row 2×10 each",
+                "Lat pulldown 2×10",
+                "Incline push-up 2×10",
+                "Plank shoulder taps 2×20"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "cardio2",
+              "minutes": 35
+            },
+            {
+              "template": "full",
+              "exercises": [
+                "DB thruster 2×10",
+                "Bulgarian split squat 2×8 each leg",
+                "Kettlebell swing 2×15",
+                "Step-up 2×10 each leg",
+                "Farmer's carry 2×40 m"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "long",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "cardio1",
+              "minutes": 45
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "cardio2",
+              "minutes": 45
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "cardio1",
+              "minutes": 50
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "cardio2",
+              "minutes": 50
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zone2-walking-starter",
+      "version": 1,
+      "name": "Zone 2 Walking Starter",
+      "subtitle": "From zero to 150 Zone 2 minutes a week in 6 weeks",
+      "forWho": "New to exercise, or coming back after a break. No gym needed.",
+      "level": "beginner",
+      "promise": "Go from zero to 150 Zone 2 minutes a week, the amount health guidelines recommend, just by walking.",
+      "whyItWorks": "It builds time first, the way exercise guidelines suggest for your first 4–6 weeks, and finishes at the 150 weekly minutes health guidelines recommend. Every bout counts, so even the 15-minute days matter. Brisk walking is the easiest way into Zone 2.",
+      "cautions": [
+        "Very fit? Flat walking may not reach Zone 2. Add hills or an incline.",
+        "Less fit? Hills may push you into Zone 3. Slow down.",
+        "Chest pain, dizziness or unusual breathlessness: stop and see a doctor."
+      ],
+      "isFree": true,
+      "weeklyZone2Minutes": [
+        75,
+        90,
+        105,
+        90,
+        120,
+        150
+      ],
+      "templates": {
+        "walk": {
+          "kind": "zone2",
+          "title": "Brisk Zone 2 walk",
+          "activity": "walk",
+          "instruction": "Brisk walk. You can talk, but not sing.",
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Easy pace"
+            },
+            {
+              "main": true,
+              "text": "Brisk: you can talk, but not sing"
+            },
+            {
+              "minutes": 2,
+              "text": "Easy pace"
+            }
+          ],
+          "note": "Can't reach Zone 2? Find a hill or speed up."
+        },
+        "long": {
+          "kind": "zone2",
+          "title": "Long easy walk",
+          "activity": "walk",
+          "instruction": "Long easy walk. Keep it steady and chatty.",
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Easy pace"
+            },
+            {
+              "main": true,
+              "text": "Steady and chatty"
+            },
+            {
+              "minutes": 2,
+              "text": "Easy pace"
+            }
+          ]
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest. An easy stroll is fine if you feel like it."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "walk",
+              "minutes": 15
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 15
+            },
+            {
+              "template": "long",
+              "minutes": 25
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "long",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "walk",
+              "minutes": 25
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 25
+            },
+            {
+              "template": "long",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Easier week. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "long",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 25
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 25
+            },
+            {
+              "template": "long",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "walk",
+              "minutes": 20
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "walk",
+              "minutes": 30
+            },
+            {
+              "template": "long",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fat-burning-12-3-30",
+      "version": 1,
+      "name": "The Fat-Burning 12-3-30",
+      "subtitle": "The viral treadmill walk, tuned to your Zone 2",
+      "forWho": "You can walk 30 minutes, hate running, and want a treadmill routine.",
+      "level": "beginner",
+      "promise": "The 12-3-30, made Zone 2: find the incline where your body burns more fat for fuel, and hold it.",
+      "whyItWorks": "Slow uphill walking is real cardio with less knee loading than fast flat walking, and walking burns more fat for fuel than cycling at the same effort. The classic 12% at 3 mph is a hard effort for most adults over 40, so this plan lets your heart rate set the incline and keeps you in Zone 2. It adds time first, with a lighter week 4. Week 6 is the test: can you do the real 12-3-30 and stay in Zone 2? If not, your own incline is the right one.",
+      "cautions": [
+        "Raise the incline over weeks, not in one day: steep walking loads calves and Achilles tendons.",
+        "Don't hold the handrails. It hides the real effort.",
+        "Lower back or shin pain? Lower the incline.",
+        "Pregnant? Skip steep inclines and use the talk test."
+      ],
+      "isFree": false,
+      "weeklyZone2Minutes": [
+        90,
+        120,
+        140,
+        90,
+        160,
+        165
+      ],
+      "templates": {
+        "find": {
+          "kind": "zone2",
+          "title": "Find your incline",
+          "activity": "inclineWalk",
+          "instruction": "Find your incline. Talk, but don't sing.",
+          "machineSettings": [
+            {
+              "label": "Speed",
+              "value": "2.5–3.2 mph"
+            },
+            {
+              "label": "Handrails",
+              "value": "don't hold on"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Flat warm-up at 2.5–3.0 mph"
+            },
+            {
+              "text": "From your starting incline, add 1% a minute until full sentences get hard, then drop 1%"
+            },
+            {
+              "main": true,
+              "text": "Hold the incline you found"
+            },
+            {
+              "minutes": 3,
+              "text": "Flat cool-down"
+            }
+          ],
+          "inclineSuggestion": true
+        },
+        "hold": {
+          "kind": "zone2",
+          "title": "Hold your incline",
+          "activity": "inclineWalk",
+          "instruction": "Hold your incline. Drop 1% if you go above.",
+          "machineSettings": [
+            {
+              "label": "Speed",
+              "value": "2.5–3.2 mph"
+            },
+            {
+              "label": "Incline",
+              "value": "your number from last session"
+            },
+            {
+              "label": "Handrails",
+              "value": "don't hold on"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Flat warm-up at 2.5–3.0 mph"
+            },
+            {
+              "main": true,
+              "text": "Your incline. Drop 1% when your heart rate drifts up"
+            },
+            {
+              "minutes": 3,
+              "text": "Flat cool-down"
+            }
+          ],
+          "inclineSuggestion": true
+        },
+        "long": {
+          "kind": "zone2",
+          "title": "Long incline walk",
+          "activity": "inclineWalk",
+          "instruction": "Long incline walk. 1-2% lower, longer time.",
+          "options": [
+            "walk"
+          ],
+          "machineSettings": [
+            {
+              "label": "Incline",
+              "value": "1–2% below your weekday number"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Flat warm-up at 2.5–3.0 mph"
+            },
+            {
+              "main": true,
+              "text": "Steady, 1–2% below your weekday incline"
+            },
+            {
+              "minutes": 3,
+              "text": "Flat cool-down"
+            }
+          ]
+        },
+        "test": {
+          "kind": "zone2",
+          "title": "12-3-30 test",
+          "activity": "inclineWalk",
+          "instruction": "12-3-30 test: 12%, 3 mph. Drop if you leave Zone 2.",
+          "machineSettings": [
+            {
+              "label": "Speed",
+              "value": "3.0 mph"
+            },
+            {
+              "label": "Incline",
+              "value": "12%"
+            },
+            {
+              "label": "Handrails",
+              "value": "don't hold on"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Flat warm-up at 2.5–3.0 mph"
+            },
+            {
+              "main": true,
+              "text": "12% at 3.0 mph. Lower the incline whenever you're above Zone 2"
+            },
+            {
+              "minutes": 3,
+              "text": "Flat cool-down"
+            }
+          ],
+          "note": "Had to drop the incline? Your own number is the right one for you."
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest. Optional easy walk."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "find",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "find",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "find",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "find",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 30
+            },
+            {
+              "template": "long",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "hold",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 35
+            },
+            {
+              "template": "long",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week: three shorter walks. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "hold",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "hold",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 40
+            },
+            {
+              "template": "long",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Test week: Friday is the real 12-3-30. Stay in Zone 2 and drop the incline if you need to.",
+          "days": [
+            {
+              "template": "hold",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "hold",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "test",
+              "minutes": 30
+            },
+            {
+              "template": "long",
+              "minutes": 50
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "no-treadmill-zone2",
+      "version": 1,
+      "name": "No-Treadmill Zone 2 Plan",
+      "subtitle": "Bike, elliptical, rower and more, easy on your joints",
+      "forWho": "You hate the treadmill (or running), or want low-impact cardio.",
+      "level": "beginner",
+      "promise": "No treadmill, no running: hit your Zone 2 minutes on the machines you actually like.",
+      "whyItWorks": "Low-impact machines let you build Zone 2 minutes without pounding your joints. Your whole week of steady work, not the machine, is what drives fat loss, and every one of these machines counts toward your Zone 2 minutes. Heart rate runs lower on a bike, so adding resistance is the key. The talk test works on every machine.",
+      "cautions": [
+        "Rowing with poor form strains the lower back: legs first, and keep it slow.",
+        "Rowers and stair climbers make it easy to drift above Zone 2.",
+        "Bike seat height matters for your knees: a slight bend at the bottom of each pedal stroke."
+      ],
+      "isFree": false,
+      "weeklyZone2Minutes": [
+        105,
+        125,
+        140,
+        105,
+        150,
+        165
+      ],
+      "templates": {
+        "bike": {
+          "kind": "zone2",
+          "title": "Zone 2 bike",
+          "activity": "bike",
+          "instruction": "Zone 2 bike. Add resistance until you're in zone.",
+          "machineSettings": [
+            {
+              "label": "Bike",
+              "value": "upright or recumbent"
+            },
+            {
+              "label": "Resistance",
+              "value": "add until you reach Zone 2"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Steady cadence. Add resistance if your heart rate stays low"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "ellip": {
+          "kind": "zone2",
+          "title": "Elliptical",
+          "activity": "elliptical",
+          "instruction": "Elliptical. Steady push, don't coast on momentum.",
+          "machineSettings": [
+            {
+              "label": "Resistance",
+              "value": "moderate"
+            },
+            {
+              "label": "Arc trainer",
+              "value": "works too"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Steady push, don't coast"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "row": {
+          "kind": "zone2",
+          "title": "Zone 2 row",
+          "activity": "rower",
+          "instruction": "Row slow and long. About 20 strokes a minute.",
+          "machineSettings": [
+            {
+              "label": "Stroke rate",
+              "value": "18–22 a minute"
+            },
+            {
+              "label": "Damper",
+              "value": "3–5"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Legs, then body, then arms. Slow and long"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "mix": {
+          "kind": "zone2",
+          "title": "Mix it up",
+          "activity": "other",
+          "instruction": "Mix it up: stay in Zone 2 on every machine.",
+          "options": [
+            "bike",
+            "elliptical"
+          ],
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Split it evenly across the bike and the elliptical"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest. Easy walk if you feel like it."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "bike",
+              "minutes": 25
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "ellip",
+              "minutes": 25
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "row",
+              "minutes": 20
+            },
+            {
+              "template": "mix",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "bike",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "ellip",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "row",
+              "minutes": 25
+            },
+            {
+              "template": "mix",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "bike",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "ellip",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "row",
+              "minutes": 30
+            },
+            {
+              "template": "mix",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "bike",
+              "minutes": 25
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "ellip",
+              "minutes": 25
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "row",
+              "minutes": 20
+            },
+            {
+              "template": "mix",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "bike",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "ellip",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "row",
+              "minutes": 30
+            },
+            {
+              "template": "mix",
+              "minutes": 45,
+              "mainText": "Split it across the bike, elliptical and rower. Stair (slowest level) only if you stay in Zone 2",
+              "options": [
+                "bike",
+                "elliptical",
+                "rower",
+                "stair"
+              ]
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "bike",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "ellip",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "row",
+              "minutes": 35
+            },
+            {
+              "template": "mix",
+              "minutes": 50,
+              "mainText": "Split it across the bike, elliptical and rower. Stair (slowest level) only if you stay in Zone 2",
+              "options": [
+                "bike",
+                "elliptical",
+                "rower",
+                "stair"
+              ]
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lift-heavy-run-easy",
+      "version": 1,
+      "name": "Lift Heavy, Run Easy",
+      "subtitle": "3 strength days + 3 Zone 2 cardio days: a hybrid week",
+      "forWho": "Lifters who want to run (or runners who want to lift). You can jog 20–30 min.",
+      "level": "intermediate",
+      "promise": "Get stronger and build your engine: 3 lifts and 150 Zone 2 minutes a week.",
+      "whyItWorks": "Easy cardio doesn't meaningfully reduce strength or muscle gains. Runs on their own days protect your lifting power, and the bike the day after leg day keeps cardio going with less impact. Keeping runs in Zone 2 makes them easy to recover from, which is the point of running easy. The minutes build to 150 over 5 weeks.",
+      "cautions": [
+        "Zone 2 running is slow. Jogging very slowly, or walking, to stay in zone is normal.",
+        "Heavy squats and deadlifts need good technique. Get coaching if you're new to them.",
+        "Pain that changes how you move means rest. Running injuries are common in new runners."
+      ],
+      "isFree": false,
+      "weeklyZone2Minutes": [
+        115,
+        125,
+        140,
+        115,
+        150,
+        155
+      ],
+      "templates": {
+        "upper": {
+          "kind": "lift",
+          "title": "Upper",
+          "instruction": "Upper. Heavy but clean: leave 1-2 reps in the tank.",
+          "exercises": [
+            "Bench press 4×6",
+            "Pull-ups 4×8 (assisted OK)",
+            "Overhead press 3×8",
+            "Cable row 3×10",
+            "Curls + triceps 2×12"
+          ]
+        },
+        "lower": {
+          "kind": "lift",
+          "title": "Lower",
+          "instruction": "Lower. Warm up with lighter sets first.",
+          "exercises": [
+            "Squat 4×5",
+            "Romanian deadlift 3×8",
+            "Walking lunges 3×10 each leg",
+            "Calf raises 3×15"
+          ]
+        },
+        "full": {
+          "kind": "lift",
+          "title": "Full body",
+          "instruction": "Full body. Deadlift fresh, form first.",
+          "exercises": [
+            "Deadlift 3×5",
+            "Incline DB press 3×8",
+            "Chest-supported row 3×10",
+            "Farmer's carry 3×40 m"
+          ]
+        },
+        "run": {
+          "kind": "zone2",
+          "title": "Easy Zone 2 run",
+          "activity": "run",
+          "instruction": "Easy Zone 2 run. Walk if you leave Zone 2.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Brisk walk warm-up"
+            },
+            {
+              "main": true,
+              "text": "Easy Zone 2 jog. Walk whenever you leave Zone 2"
+            },
+            {
+              "minutes": 3,
+              "text": "Walk"
+            }
+          ]
+        },
+        "bike": {
+          "kind": "zone2",
+          "title": "Zone 2 bike",
+          "activity": "bike",
+          "instruction": "Zone 2 bike. Legs sore? Bike, don't run.",
+          "machineSettings": [
+            {
+              "label": "Resistance",
+              "value": "add until you reach Zone 2"
+            }
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Steady Zone 2. Add resistance until you reach it"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "longRun": {
+          "kind": "zone2",
+          "title": "Long, slow Zone 2 run",
+          "activity": "run",
+          "instruction": "Long, slow Zone 2 run. Walk the hills.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Walk"
+            },
+            {
+              "main": true,
+              "text": "Long, slow Zone 2 run. Walk the hills"
+            },
+            {
+              "minutes": 5,
+              "text": "Walk"
+            }
+          ]
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest. Walk, stretch, eat and sleep."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "upper"
+            },
+            {
+              "template": "run",
+              "minutes": 30
+            },
+            {
+              "template": "lower"
+            },
+            {
+              "template": "bike",
+              "minutes": 40
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "longRun",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "upper"
+            },
+            {
+              "template": "run",
+              "minutes": 35
+            },
+            {
+              "template": "lower"
+            },
+            {
+              "template": "bike",
+              "minutes": 40
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "longRun",
+              "minutes": 50
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "upper"
+            },
+            {
+              "template": "run",
+              "minutes": 40
+            },
+            {
+              "template": "lower"
+            },
+            {
+              "template": "bike",
+              "minutes": 45
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "longRun",
+              "minutes": 55
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week: fewer sets, about 10% lighter, shorter cardio. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "upper",
+              "exercises": [
+                "Bench press 2–3×6",
+                "Pull-ups 2–3×8 (assisted OK)",
+                "Overhead press 2–3×8",
+                "Cable row 2–3×10",
+                "Curls + triceps 2–3×12"
+              ],
+              "note": "Lighter week: fewer sets, about 10% lighter."
+            },
+            {
+              "template": "run",
+              "minutes": 30
+            },
+            {
+              "template": "lower",
+              "exercises": [
+                "Squat 2–3×5",
+                "Romanian deadlift 2–3×8",
+                "Walking lunges 2–3×10 each leg",
+                "Calf raises 2–3×15"
+              ],
+              "note": "Lighter week: fewer sets, about 10% lighter."
+            },
+            {
+              "template": "bike",
+              "minutes": 40
+            },
+            {
+              "template": "full",
+              "exercises": [
+                "Deadlift 2×5",
+                "Incline DB press 2×8",
+                "Chest-supported row 2×10",
+                "Farmer's carry 2×40 m"
+              ],
+              "note": "Lighter week: fewer sets, about 10% lighter."
+            },
+            {
+              "template": "longRun",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "upper"
+            },
+            {
+              "template": "run",
+              "minutes": 45
+            },
+            {
+              "template": "lower"
+            },
+            {
+              "template": "bike",
+              "minutes": 45
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "longRun",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "upper"
+            },
+            {
+              "template": "run",
+              "minutes": 45
+            },
+            {
+              "template": "lower"
+            },
+            {
+              "template": "bike",
+              "minutes": 50
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "longRun",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walk-to-easy-run",
+      "version": 1,
+      "name": "Walk to Easy Run",
+      "subtitle": "Start running the Zone 2 way: slow, easy, no gasping",
+      "forWho": "You walk comfortably and want to start running without hating it.",
+      "level": "beginner",
+      "promise": "Go from walking to 35 minutes of easy running in 8 weeks, without gasping.",
+      "whyItWorks": "Run-walk builds are the standard way into running. Letting your heart rate decide when you jog keeps it in Zone 2, so it feels easy, and the talk test tells you the same. A lighter week 4 and no more than 3 runs a week keep the impact modest. The minutes shown are jog/walk minutes: walk breaks can dip below Zone 2, so your counted Zone 2 minutes may be a little lower.",
+      "cautions": [
+        "Running is high-impact. Shin, knee or foot pain that lasts into the next day means repeat the week.",
+        "Very slow jogging, or walking, to stay in Zone 2 is normal at first.",
+        "Proper running shoes help."
+      ],
+      "isFree": false,
+      "weeklyZone2Minutes": [
+        93,
+        102,
+        110,
+        90,
+        130,
+        148,
+        153,
+        150
+      ],
+      "templates": {
+        "runWalk": {
+          "kind": "zone2",
+          "title": "Run-walk",
+          "activity": "run",
+          "instruction": "Jog slow. Walk the moment you leave Zone 2.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Brisk walk warm-up"
+            },
+            {
+              "main": true,
+              "text": "Jog / walk intervals"
+            },
+            {
+              "minutes": 3,
+              "text": "Walk"
+            }
+          ]
+        },
+        "easyRun": {
+          "kind": "zone2",
+          "title": "Easy run",
+          "activity": "run",
+          "instruction": "Easy jog the whole way. Walk if you leave Zone 2.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Brisk walk warm-up"
+            },
+            {
+              "main": true,
+              "text": "Continuous easy jog. Walk if you leave Zone 2"
+            },
+            {
+              "minutes": 3,
+              "text": "Walk"
+            }
+          ]
+        },
+        "longWalk": {
+          "kind": "zone2",
+          "title": "Long brisk walk",
+          "activity": "walk",
+          "instruction": "Long brisk walk. Easy legs for next week.",
+          "steps": [
+            {
+              "minutes": 3,
+              "text": "Easy pace"
+            },
+            {
+              "main": true,
+              "text": "Long brisk walk"
+            },
+            {
+              "minutes": 2,
+              "text": "Easy pace"
+            }
+          ]
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest. Your legs adapt on rest days."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "runWalk",
+              "minutes": 21,
+              "mainText": "1 min jog / 2 min walk × 7. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 21,
+              "mainText": "1 min jog / 2 min walk × 7. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 21,
+              "mainText": "1 min jog / 2 min walk × 7. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "longWalk",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "runWalk",
+              "minutes": 24,
+              "mainText": "2 min jog / 2 min walk × 6. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 24,
+              "mainText": "2 min jog / 2 min walk × 6. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 24,
+              "mainText": "2 min jog / 2 min walk × 6. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "longWalk",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "runWalk",
+              "minutes": 25,
+              "mainText": "3 min jog / 2 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 25,
+              "mainText": "3 min jog / 2 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 25,
+              "mainText": "3 min jog / 2 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "longWalk",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "runWalk",
+              "minutes": 20,
+              "mainText": "2 min jog / 2 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 20,
+              "mainText": "2 min jog / 2 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 20,
+              "mainText": "2 min jog / 2 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "longWalk",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "runWalk",
+              "minutes": 30,
+              "mainText": "5 min jog / 1 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 30,
+              "mainText": "5 min jog / 1 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 30,
+              "mainText": "5 min jog / 1 min walk × 5. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "longWalk",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "runWalk",
+              "minutes": 36,
+              "mainText": "8 min jog / 1 min walk × 4. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 36,
+              "mainText": "8 min jog / 1 min walk × 4. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 36,
+              "mainText": "8 min jog / 1 min walk × 4. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "longWalk",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "runWalk",
+              "minutes": 36,
+              "mainText": "11 min jog / 1 min walk × 3. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 36,
+              "mainText": "11 min jog / 1 min walk × 3. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "runWalk",
+              "minutes": 36,
+              "mainText": "11 min jog / 1 min walk × 3. Walk sooner if you leave Zone 2"
+            },
+            {
+              "template": "longWalk",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "easyRun",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "easyRun",
+              "minutes": 35
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "easyRun",
+              "minutes": 35
+            },
+            {
+              "template": "longWalk",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zone2-150-to-300",
+      "version": 1,
+      "name": "150 to 300 Zone 2 Builder",
+      "subtitle": "Double your Zone 2 minutes in 8 weeks",
+      "forWho": "You already hit 150 a week and want the next level.",
+      "level": "intermediate",
+      "promise": "Build from 150 to 300 Zone 2 minutes a week, the top of the WHO's recommended range.",
+      "whyItWorks": "300 minutes a week is the top of the WHO's recommended range, and more weekly minutes are linked with better fat-loss results in the research. Splitting some days into two walks makes the time fit a busy life, and every bout counts. Pair it with 2 strength sessions a week if you can, done before that day's Zone 2.",
+      "cautions": [
+        "This is a lot of time on your feet. Swap in bike or elliptical days if feet, shins or knees complain.",
+        "Week 4 is lighter on purpose.",
+        "Eating less while you train? Watch your energy and sleep."
+      ],
+      "isFree": false,
+      "weeklyZone2Minutes": [
+        150,
+        175,
+        200,
+        160,
+        225,
+        250,
+        275,
+        300
+      ],
+      "templates": {
+        "any": {
+          "kind": "zone2",
+          "title": "Zone 2, your way",
+          "activity": "other",
+          "instruction": "Zone 2, any way you like. Talk, don't sing.",
+          "options": [
+            "walk",
+            "inclineWalk",
+            "bike",
+            "elliptical",
+            "rower"
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Zone 2 on your pick: walk, incline walk, bike, elliptical or rower"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ],
+          "inclineSuggestion": true
+        },
+        "split": {
+          "kind": "zone2",
+          "title": "Two brisk walks",
+          "activity": "walk",
+          "instruction": "Two brisk walks: after lunch and after dinner.",
+          "steps": [
+            {
+              "main": true,
+              "text": "Half after lunch, half after dinner. Brisk, or it won't reach Zone 2"
+            }
+          ],
+          "splitInto": 2
+        },
+        "long": {
+          "kind": "zone2",
+          "title": "Long Zone 2 session",
+          "activity": "other",
+          "instruction": "Long Zone 2 session. Slow down as the hour goes.",
+          "options": [
+            "walk",
+            "bike",
+            "elliptical",
+            "rower"
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Any activity. Ease off as your heart rate drifts up"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest day."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "split",
+              "minutes": 20
+            },
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "long",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "split",
+              "minutes": 20
+            },
+            {
+              "template": "any",
+              "minutes": 35
+            },
+            {
+              "template": "split",
+              "minutes": 20
+            },
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "long",
+              "minutes": 40
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "any",
+              "minutes": 35
+            },
+            {
+              "template": "split",
+              "minutes": 25
+            },
+            {
+              "template": "any",
+              "minutes": 35
+            },
+            {
+              "template": "split",
+              "minutes": 25
+            },
+            {
+              "template": "any",
+              "minutes": 35
+            },
+            {
+              "template": "long",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "split",
+              "minutes": 20
+            },
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "split",
+              "minutes": 20
+            },
+            {
+              "template": "any",
+              "minutes": 30
+            },
+            {
+              "template": "long",
+              "minutes": 30
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "any",
+              "minutes": 40
+            },
+            {
+              "template": "split",
+              "minutes": 30
+            },
+            {
+              "template": "any",
+              "minutes": 40
+            },
+            {
+              "template": "split",
+              "minutes": 30
+            },
+            {
+              "template": "any",
+              "minutes": 40
+            },
+            {
+              "template": "long",
+              "minutes": 45
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "any",
+              "minutes": 45
+            },
+            {
+              "template": "split",
+              "minutes": 30
+            },
+            {
+              "template": "any",
+              "minutes": 45
+            },
+            {
+              "template": "split",
+              "minutes": 30
+            },
+            {
+              "template": "any",
+              "minutes": 45
+            },
+            {
+              "template": "long",
+              "minutes": 55
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "any",
+              "minutes": 50
+            },
+            {
+              "template": "split",
+              "minutes": 30
+            },
+            {
+              "template": "any",
+              "minutes": 50
+            },
+            {
+              "template": "split",
+              "minutes": 30
+            },
+            {
+              "template": "any",
+              "minutes": 55
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "any",
+              "minutes": 50
+            },
+            {
+              "template": "split",
+              "minutes": 40
+            },
+            {
+              "template": "any",
+              "minutes": 55
+            },
+            {
+              "template": "split",
+              "minutes": 40
+            },
+            {
+              "template": "any",
+              "minutes": 55
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
