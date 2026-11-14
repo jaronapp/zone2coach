@@ -2612,6 +2612,367 @@
           ]
         }
       ]
+    },
+    {
+      "id": "4-day-fat-loss-zone2",
+      "version": 1,
+      "name": "4-Day Fat Loss Plan + Zone 2",
+      "subtitle": "“I want to work out 4x a week to burn fat”: here's the week",
+      "forWho": "You want to lift 4 days a week to lose fat: lower body, upper body + core, glutes + legs and full body, plus 2 easy Zone 2 walks.",
+      "level": "intermediate",
+      "promise": "Lift 4 days, walk in Zone 2 on 2 more, and build to 150 Zone 2 minutes a week without endless hard cardio.",
+      "whyItWorks": "Lifting keeps or builds muscle while you lose fat. Easy Zone 2 walking burns more fat for fuel than hard cardio and is easy to recover from, so it never costs you the next lift. The two walks build to 150 Zone 2 minutes a week by week 6, the amount health guidelines recommend, and week 4 is lighter on purpose so you come back fresh. Fat loss itself needs a small calorie deficit, enough protein, good sleep and steps every day (8–10k is a good target).",
+      "cautions": [
+        "Learn each lift with light weights first, and stop any lift that causes sharp pain.",
+        "Hip thrusts, split squats and lunges can bother knees or hips. Swap in glute bridges or the leg press if they do.",
+        "The original glutes-day finisher is stair-climber intervals. Intervals push you far above Zone 2 and are hard to recover from after heavy legs, so this plan swaps in an easy incline walk.",
+        "The stair climber pushes most people out of Zone 2 fast, so use the slowest level only.",
+        "The bonus cardio after a lift is optional and never counted in the plan's minutes."
+      ],
+      "isFree": true,
+      "weeklyZone2Minutes": [
+        105,
+        115,
+        130,
+        105,
+        140,
+        150
+      ],
+      "templates": {
+        "lower": {
+          "kind": "lift",
+          "title": "Lower body",
+          "instruction": "Lower body. Warm up 5 min first.",
+          "exercises": [
+            "Hip thrusts 4×8–10",
+            "Bulgarian split squats 3×10 each leg",
+            "Leg press 3×10–12",
+            "Romanian deadlifts 3×10",
+            "Leg extensions 3×12–15",
+            "Seated leg curls 3×12"
+          ],
+          "bonusZone2": {
+            "activity": "inclineWalk",
+            "minutes": 15,
+            "instruction": "Optional incline walk after your lift. Steady and easy. Not counted."
+          }
+        },
+        "upper": {
+          "kind": "lift",
+          "title": "Upper body + core",
+          "instruction": "Upper + core. Controlled reps, 60-90 s rest.",
+          "exercises": [
+            "Lat pulldown 3×8–10",
+            "Seated cable row 3×10",
+            "Dumbbell shoulder press 3×10",
+            "Chest press 3×10",
+            "Lateral raises 3×12–15",
+            "Tricep rope pushdown 3×12",
+            "Dead bugs 3×10 each side",
+            "Plank 3×30–45 s"
+          ],
+          "bonusZone2": {
+            "activity": "cycle",
+            "minutes": 20,
+            "instruction": "Optional easy bike, stair climber or incline walk. Not counted."
+          }
+        },
+        "glutes": {
+          "kind": "lift",
+          "title": "Glutes + legs",
+          "instruction": "Glutes + legs. Warm up 5 min first.",
+          "exercises": [
+            "Barbell hip thrust 4×8",
+            "Romanian deadlift 4×8–10",
+            "Reverse lunges 3×10 each leg",
+            "Step-ups 3×10 each leg",
+            "Abduction machine 3×15–20",
+            "Cable kickbacks 3×12 each leg"
+          ],
+          "bonusZone2": {
+            "activity": "inclineWalk",
+            "minutes": 12,
+            "instruction": "Optional easy incline walk instead of intervals. Not counted."
+          }
+        },
+        "full": {
+          "kind": "lift",
+          "title": "Full body",
+          "instruction": "Full body. Move well, then add weight.",
+          "exercises": [
+            "Goblet squats 3×10",
+            "Dumbbell RDL 3×10",
+            "One-arm dumbbell row 3×10 each side",
+            "Dumbbell chest press 3×10",
+            "Walking lunges 3×12 each leg",
+            "Lateral raises 3×12–15",
+            "Reverse crunches 3×12",
+            "Plank shoulder taps 3×16 total"
+          ],
+          "bonusZone2": {
+            "activity": "inclineWalk",
+            "minutes": 20,
+            "instruction": "Optional easy incline walk, bike or stair climber. Not counted."
+          }
+        },
+        "walk": {
+          "kind": "zone2",
+          "title": "Zone 2 incline walk",
+          "activity": "inclineWalk",
+          "instruction": "Incline walk in Zone 2. You can talk, but not sing.",
+          "options": [
+            "walk"
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Zone 2 incline walk: talk, but don't sing"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ],
+          "inclineSuggestion": true
+        },
+        "long": {
+          "kind": "zone2",
+          "title": "Long Zone 2 walk",
+          "activity": "walk",
+          "instruction": "Long brisk walk. Talk the whole way.",
+          "options": [
+            "inclineWalk"
+          ],
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Long brisk walk: talk the whole way"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ],
+          "note": "Short on time? Split it into two walks on the same day: both count."
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Full rest. An easy stroll for your steps, then sleep, eat well, recharge."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "walk",
+              "minutes": 45
+            },
+            {
+              "template": "glutes"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "walk",
+              "minutes": 50
+            },
+            {
+              "template": "glutes"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 65
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "walk",
+              "minutes": 55
+            },
+            {
+              "template": "glutes"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 75
+            }
+          ]
+        },
+        {
+          "note": "Lighter week: 2 sets of each exercise and shorter walks. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "lower",
+              "exercises": [
+                "Hip thrusts 2×8–10",
+                "Bulgarian split squats 2×10 each leg",
+                "Leg press 2×10–12",
+                "Romanian deadlifts 2×10",
+                "Leg extensions 2×12–15",
+                "Seated leg curls 2×12"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "upper",
+              "exercises": [
+                "Lat pulldown 2×8–10",
+                "Seated cable row 2×10",
+                "Dumbbell shoulder press 2×10",
+                "Chest press 2×10",
+                "Lateral raises 2×12–15",
+                "Tricep rope pushdown 2×12",
+                "Dead bugs 2×10 each side",
+                "Plank 2×30–45 s"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "walk",
+              "minutes": 45
+            },
+            {
+              "template": "glutes",
+              "exercises": [
+                "Barbell hip thrust 2×8",
+                "Romanian deadlift 2×8–10",
+                "Reverse lunges 2×10 each leg",
+                "Step-ups 2×10 each leg",
+                "Abduction machine 2×15–20",
+                "Cable kickbacks 2×12 each leg"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full",
+              "exercises": [
+                "Goblet squats 2×10",
+                "Dumbbell RDL 2×10",
+                "One-arm dumbbell row 2×10 each side",
+                "Dumbbell chest press 2×10",
+                "Walking lunges 2×12 each leg",
+                "Lateral raises 2×12–15",
+                "Reverse crunches 2×12",
+                "Plank shoulder taps 2×16 total"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "walk",
+              "minutes": 60
+            },
+            {
+              "template": "glutes"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 80
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "walk",
+              "minutes": 65
+            },
+            {
+              "template": "glutes"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 85
+            }
+          ]
+        }
+      ]
     }
   ]
 }
