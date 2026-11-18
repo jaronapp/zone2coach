@@ -2973,6 +2973,325 @@
           ]
         }
       ]
+    },
+    {
+      "id": "3-day-home-zone2",
+      "version": 1,
+      "name": "3-Day Home Workout + Zone 2",
+      "subtitle": "“I want to work out 3x a week from home”: here's the week",
+      "forWho": "You want to train at home 3 days a week with just dumbbells and a resistance band: lower body, upper body and full body, plus 2 easy Zone 2 walks.",
+      "level": "beginner",
+      "promise": "Work out at home 3 days, walk in Zone 2 on 2 more, and build to 150 Zone 2 minutes a week.",
+      "whyItWorks": "Three full workouts a week, each with a rest day after it, are enough to keep or build muscle, and all you need is a set of dumbbells and a band. Easy Zone 2 walks burn more fat for fuel than hard cardio, are easy to recover from and keep your daily steps up. The two walks build to 150 Zone 2 minutes a week by week 6, the amount health guidelines recommend, and week 4 is lighter on purpose so you come back fresh.",
+      "cautions": [
+        "Learn each move with light dumbbells first, and stop any exercise that causes sharp pain.",
+        "Bulgarian split squats and lunges can bother knees. Swap in glute bridges if they do.",
+        "The original full-body finisher is 30 seconds of marching or high knees, then 30 seconds of rest. That pushes you above Zone 2, so this plan swaps in an easy walk.",
+        "Keep your daily steps up: an easy walk on the other days helps too.",
+        "The bonus walk after Friday's workout is optional and never counted in the plan's minutes."
+      ],
+      "isFree": true,
+      "weeklyZone2Minutes": [
+        105,
+        115,
+        130,
+        105,
+        140,
+        150
+      ],
+      "templates": {
+        "lower": {
+          "kind": "lift",
+          "title": "Lower body",
+          "instruction": "Lower body, then core. Warm up 5 min first.",
+          "exercises": [
+            "Dumbbell goblet squat 3×10–12",
+            "Dumbbell Romanian deadlift 3×10–12",
+            "Bulgarian split squat 3×8–10 each leg",
+            "Dumbbell hip thrust 3×10–15",
+            "Banded lateral walks 3×12 each side",
+            "Standing calf raises 3×15–20",
+            "Dead bugs 3×10 each side",
+            "Plank 3×30–45 s"
+          ]
+        },
+        "upper": {
+          "kind": "lift",
+          "title": "Upper body",
+          "instruction": "Upper body, then core. Controlled reps, 60-90 s rest.",
+          "exercises": [
+            "One-arm dumbbell row 3×10 each side",
+            "Dumbbell shoulder press 3×8–12",
+            "Dumbbell floor press 3×10–12",
+            "Dumbbell lateral raise 3×12–15",
+            "Dumbbell bicep curls 3×10–12",
+            "Overhead tricep extension 3×10–12",
+            "Reverse crunch 3×12",
+            "Side plank 3×20–30 s each side"
+          ]
+        },
+        "full": {
+          "kind": "lift",
+          "title": "Full body",
+          "instruction": "Full body. Move well, then add weight.",
+          "exercises": [
+            "Dumbbell sumo squat 3×10–12",
+            "Dumbbell RDL 3×10",
+            "Reverse lunges 3×8–10 each leg",
+            "Dumbbell bent-over row 3×10–12",
+            "Dumbbell floor press 3×10–12",
+            "Glute bridge + band abduction 3×15",
+            "Dumbbell farmer carry 3×30–45 s"
+          ],
+          "bonusZone2": {
+            "activity": "walk",
+            "minutes": 15,
+            "instruction": "Optional easy 10-15 min walk instead of the finisher. Not counted."
+          }
+        },
+        "walk": {
+          "kind": "zone2",
+          "title": "Zone 2 walk",
+          "activity": "walk",
+          "instruction": "Brisk Zone 2 walk. You can talk, but not sing.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Brisk Zone 2 walk: talk, but don't sing"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ]
+        },
+        "long": {
+          "kind": "zone2",
+          "title": "Long Zone 2 walk",
+          "activity": "walk",
+          "instruction": "Long brisk walk. Talk the whole way.",
+          "steps": [
+            {
+              "minutes": 5,
+              "text": "Easy warm-up"
+            },
+            {
+              "main": true,
+              "text": "Long brisk walk: talk the whole way"
+            },
+            {
+              "minutes": 3,
+              "text": "Easy cool-down"
+            }
+          ],
+          "note": "Short on time? Split it into two walks on the same day: both count."
+        },
+        "rest": {
+          "kind": "rest",
+          "note": "Rest. An easy stroll keeps your daily steps up."
+        }
+      },
+      "weeks": [
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "walk",
+              "minutes": 45
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "walk",
+              "minutes": 50
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 65
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "walk",
+              "minutes": 55
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 75
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "note": "Lighter week: 2 sets of each exercise and shorter walks. Missed days? Use it to catch up.",
+          "days": [
+            {
+              "template": "lower",
+              "exercises": [
+                "Dumbbell goblet squat 2×10–12",
+                "Dumbbell Romanian deadlift 2×10–12",
+                "Bulgarian split squat 2×8–10 each leg",
+                "Dumbbell hip thrust 2×10–15",
+                "Banded lateral walks 2×12 each side",
+                "Standing calf raises 2×15–20",
+                "Dead bugs 2×10 each side",
+                "Plank 2×30–45 s"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "walk",
+              "minutes": 45
+            },
+            {
+              "template": "upper",
+              "exercises": [
+                "One-arm dumbbell row 2×10 each side",
+                "Dumbbell shoulder press 2×8–12",
+                "Dumbbell floor press 2×10–12",
+                "Dumbbell lateral raise 2×12–15",
+                "Dumbbell bicep curls 2×10–12",
+                "Overhead tricep extension 2×10–12",
+                "Reverse crunch 2×12",
+                "Side plank 2×20–30 s each side"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full",
+              "exercises": [
+                "Dumbbell sumo squat 2×10–12",
+                "Dumbbell RDL 2×10",
+                "Reverse lunges 2×8–10 each leg",
+                "Dumbbell bent-over row 2×10–12",
+                "Dumbbell floor press 2×10–12",
+                "Glute bridge + band abduction 2×15",
+                "Dumbbell farmer carry 2×30–45 s"
+              ],
+              "note": "Lighter week: 2 sets of each exercise."
+            },
+            {
+              "template": "long",
+              "minutes": 60
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "walk",
+              "minutes": 60
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 80
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        },
+        {
+          "days": [
+            {
+              "template": "lower"
+            },
+            {
+              "template": "walk",
+              "minutes": 65
+            },
+            {
+              "template": "upper"
+            },
+            {
+              "template": "rest"
+            },
+            {
+              "template": "full"
+            },
+            {
+              "template": "long",
+              "minutes": 85
+            },
+            {
+              "template": "rest"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
